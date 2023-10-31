@@ -21,7 +21,6 @@ function draw() {
     spaceCraft.show();
     spaceCraft.checkEdges();
   }
-}
 
 // function mousePressed() {
 //   reset();
@@ -45,4 +44,3 @@ function draw() {
     dragForce.setMag(dragMagnitude);
     return dragForce;
   }
-}
