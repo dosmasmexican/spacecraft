@@ -1,0 +1,16 @@
+class Liquid {
+  constructor() {
+    this.c = 0.1;
+  }
+
+  calculateDrag(mover) {
+    let speed = mover.velocity.mag();
+    let dragMagnitude = this.c * speed * speed;
+
+    let dragForce = mover.velocity.copy();
+    dragForce.mult(-1);
+    
+    dragForce.setMag(dragMagnitude);
+    return dragForce;
+  }
+}
